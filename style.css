@@ -1,0 +1,84 @@
+/* Ik heb de resolutie 
+van mijn telefoon gebruikt als voorbeeldS */
+#container {
+	width: 640px;
+	height: 360px;
+	border: 1px solid black;
+	position: relative;
+}
+
+#slider {
+	height: 90%;
+	margin-right: 20px;
+	float: right;
+}
+
+#shoot {
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	float: right;
+	margin-right: 20px;
+	margin-top: 120px;
+	background-color: red;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+#score {
+	width: 20%;
+	height: 20px;
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, 20px)
+}
+#drag {
+	border: 1px solid black;
+
+	width: 80px;
+	height: 50px;
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	top: 70%;
+	left: 30%;
+	transform: translate(-30%, -70%)
+
+}
+#drop {
+	border: 1px solid black;
+
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	text-align: center;
+	line-height: 80px;
+	top: 70%;
+	left: 70%;
+	transform: translate(-70%, -70%)
+}
+
+#joystick {
+	border: 1px solid black;
+	width: 100px;
+	height: 120px;
+	position: absolute;
+	top: 80%;
+	left: 20px;
+	transform: translate(0, -80%)
+}
+
+#stick {
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+	left: 20%;
+	top: 20%;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	background-color: rosybrown;
+}
