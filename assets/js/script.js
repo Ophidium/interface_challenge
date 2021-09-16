@@ -1,4 +1,4 @@
-
+// slider function
 $(function () {
 	$("#slider").slider({
 		orientation: "vertical",
@@ -8,7 +8,7 @@ $(function () {
 		value: 50,
 	});
 });
-
+// drag and drop function
 $(function () {
 	$("#drag").draggable({ revert: "valid" });
 	$("#drop").droppable({
@@ -19,7 +19,7 @@ $(function () {
 		}
 	});
 });
-
+// joystick function
 $(function () {
 	$( "#stick" ).draggable({ containment: "#joystick", scroll: false });
 });
@@ -42,9 +42,12 @@ function readData() {
 	fetch('data.json')
 		.then(response => response.json())
 		.then(data => {
-			//set the position and name of the car
+			//Increases score on controller
 			document.getElementById("score").value = data.player.score;
+			// Gets the speed value of the slider
+			fetch('dataUpdate.php?speed=' + $( "#slider" ).slider( "value" ))
 			// console.log(data.player.score);
+			 console.log(data.player.speed);
 			setTimeout(readData, 500);
 		});
 }

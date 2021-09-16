@@ -15,6 +15,10 @@ if (isset($_GET['score']))
     $array["player"]["score"] += $_GET['score'];
 }
 
+if (isset($_GET['speed']))
+{
+    $array["player"]["speed"] = $_GET['speed'];
+}
 
 
 // and here
