@@ -20,6 +20,18 @@ if (isset($_GET['speed']))
     $array["player"]["speed"] = $_GET['speed'];
 }
 
+if (isset($_GET['brick']))
+{
+	if ($array["player"]["brick"] > 0) {
+    	$array["player"]["brick"] -= 1;
+	}
+}
+
+if (isset($_GET['direction']))
+{
+    $array["player"]["direction"] = $_GET['direction'];
+}
+
 
 // and here
 $result = file_put_contents("data.json", json_encode($array), LOCK_EX);
