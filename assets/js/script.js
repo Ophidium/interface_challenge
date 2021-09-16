@@ -10,7 +10,11 @@ $(function () {
 });
 // drag and drop function
 $(function () {
-	$("#drag").draggable({ revert: "valid" });
+	$("#drag").draggable({ 
+		revert: "valid", 
+		// revert: true, 
+		// helper: "clone" 
+	});
 	$("#drop").droppable({
 		drop: function (event, ui) {
 			$(this)
@@ -20,9 +24,11 @@ $(function () {
 	});
 });
 // joystick function
-$(function () {
-	$( "#stick" ).draggable({ containment: "#joystick", scroll: false });
-});
+// $(function () {
+// 	$( "#stick" ).draggable({ containment: "#joystick", scroll: false });
+// });
+
+var joy = new JoyStick('joyDiv');
 
 fetch('data.json')
 .then(response => response.json())
@@ -47,7 +53,7 @@ function readData() {
 			// Gets the speed value of the slider
 			fetch('dataUpdate.php?speed=' + $( "#slider" ).slider( "value" ))
 			// console.log(data.player.score);
-			 console.log(data.player.speed);
+			// console.log(data.player.speed);
 			setTimeout(readData, 500);
 		});
 }

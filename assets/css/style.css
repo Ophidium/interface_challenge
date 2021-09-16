@@ -52,8 +52,8 @@ van mijn telefoon gebruikt als voorbeeldS */
 	text-align: center;
 	line-height: 50px;
 	top: 70%;
-	left: 30%;
-	transform: translate(-30%, -70%)
+	left: 35%;
+	/* transform: translate(-40%, -70%) */
 
 }
 #drop {
@@ -64,11 +64,22 @@ van mijn telefoon gebruikt als voorbeeldS */
 	position: absolute;
 	text-align: center;
 	line-height: 80px;
-	top: 70%;
-	left: 70%;
-	transform: translate(-70%, -70%)
+	top: 65%;
+	left: 60%;
+	/* transform: translate(-70%, -70%) */
 }
 
+#joyDiv {
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 25%;
+	left: 10px;
+	/* transform: translate(0, -50%) */
+}
+
+/* 
 #joystick {
 	border: 1px solid black;
 	width: 100px;
@@ -77,8 +88,8 @@ van mijn telefoon gebruikt als voorbeeldS */
 	top: 80%;
 	left: 20px;
 	transform: translate(0, -80%)
-}
-
+} */
+/* 
 #stick {
 	border: 1px solid black;
 	width: 50px;
@@ -89,4 +100,4 @@ van mijn telefoon gebruikt als voorbeeldS */
 	text-align: center;
 	line-height: 50px;
 	background-color: rosybrown;
-}
+} */

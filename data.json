@@ -1,1 +1,1 @@
-{"player":{"direction":"none","speed":"0","health":10,"damage":1,"brick":10,"score":1600},"barrier":{"health":5},"boss":{"direction":"none","speed":0,"health":10,"damage":1}}
+{"player":{"direction":"none","speed":"50","health":10,"damage":1,"brick":10,"score":4400},"barrier":{"health":5},"boss":{"direction":"none","speed":0,"health":10,"damage":1}}
