@@ -36,14 +36,15 @@ function setScore(score) {
 }
 
 let gameScore = document.getElementById("score").value;
+// console.log("gameScore");
 
 function readData() {
 	fetch('data.json')
 		.then(response => response.json())
 		.then(data => {
 			//set the position and name of the car
-			gameScore = data.player.score;
-			//console.log(data.direction);
+			document.getElementById("score").value = data.player.score;
+			// console.log(data.player.score);
 			setTimeout(readData, 500);
 		});
 }

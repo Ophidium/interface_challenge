@@ -14,7 +14,7 @@
 <body>
 	<div id="container">
 		<div id="slider">Speed</div>
-		<input type="button" value="shoot" id="shoot" onclick="setScore(100)">
+		<input type="button" value="shoot" id="shoot" onclick="setScore(100);">
 		<input name="score" id="score" value=0 readonly>
 
 		<!-- drag gaat niet naar de oorspronkelijke positie -->
@@ -32,35 +32,6 @@
 	<script src="assets/js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
 	<script src="assets/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 	<script src="assets/js/script.js"></script>
-	<!-- <script>
-		$(function () {
-			$("#slider").slider({
-				orientation: "vertical",
-				range: "min",
-				min: 0,
-				max: 100,
-				value: 50,
-			});
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#drag").draggable({ revert: "valid" });
-			$("#drop").droppable({
-				drop: function (event, ui) {
-					$(this)
-						.addClass("ui-state-highlight")
-						.html("Dropped!");
-				}
-			});
-		});
-	</script>
-	<script>
-		$(function () {
-			$( "#stick" ).draggable({ containment: "#joystick", scroll: false });
-
-		});
-	</script> -->
 </body>
 
 </html>
