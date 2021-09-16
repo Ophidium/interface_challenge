@@ -1,0 +1,22 @@
+{
+	"player": {
+		"direction": "none",
+		"speed": 0,
+		"health": 10,
+		"damage": 1,
+		"brick": 10,
+		"score": 0
+	},
+
+	"barrier": {
+		"health": 5
+	},
+
+	"boss": {
+		"direction": "none",
+		"speed": 0,
+		"health": 10,
+		"damage": 1
+	}
+
+}

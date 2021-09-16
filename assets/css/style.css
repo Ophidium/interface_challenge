@@ -27,6 +27,14 @@ van mijn telefoon gebruikt als voorbeeldS */
 	font-weight: bold;
 }
 
+#shoot:hover {
+	background-color: #ff5500;
+}
+
+#shoot:active {
+	background-color: #eaff00;
+}
+
 #score {
 	width: 20%;
 	height: 20px;

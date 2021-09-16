@@ -5,13 +5,34 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="jquery-ui-1.12.1.custom\jquery-ui.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/js/jquery-ui-1.12.1.custom/jquery-ui.css">
 	<title>concept</title>
 
-	<script src="jquery-ui-1.12.1.custom\external\jquery\jquery.js"></script>
-	<script src="jquery-ui-1.12.1.custom\jquery-ui.js"></script>
-	<script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="slider">Speed</div>
+		<button type="button" id="shoot">shoot</button>
+		<input name="score" id="score" value="500 points" readonly></textarea>
+
+		<!-- drag gaat niet naar de oorspronkelijke positie -->
+		<div id="drag">drag me</div>
+		<div id="drop">drop here</div>
+		<!-- waarschijnlijk joystick 
+		met iets anders vervangen -->
+		<div id="joystick">
+			<p id="stick">stick</p>
+		</div>
+	</div>
+
+
+
+	<script src="assets/js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+	<script src="assets/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+	<script src="assets/js/script.js"></script>
+	<!-- <script>
 		$(function () {
 			$("#slider").slider({
 				orientation: "vertical",
@@ -39,25 +60,7 @@
 			$( "#stick" ).draggable({ containment: "#joystick", scroll: false });
 
 		});
-	</script>
-</head>
-
-<body>
-	<div id="container">
-		<div id="slider"></div>
-		<button type="button" id="shoot">shoot</button>
-		<input name="score" id="score" value="500 points" readonly></textarea>
-
-		<!-- drag gaat niet naar de oorspronkelijke positie -->
-		<div id="drag">drag me</div>
-		<div id="drop">drop here</div>
-		<!-- waarschijnlijk joystick 
-		met iets anders vervangen -->
-		<div id="joystick">
-			<p id="stick">stick</p>
-		</div>
-	</div>
-
+	</script> -->
 </body>
 
 </html>
