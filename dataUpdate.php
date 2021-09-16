@@ -10,7 +10,10 @@ fclose($pointer);
 $array = json_decode($content, true);
 // put changes between here
 
-
+if (isset($_GET['score']))
+{
+    $array["player"]["score"] += $_GET['score'];
+}
 
 
 

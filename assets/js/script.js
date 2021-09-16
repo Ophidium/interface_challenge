@@ -7,8 +7,7 @@ $(function () {
 		max: 100,
 		value: 50,
 	});
-		});
-
+});
 
 $(function () {
 	$("#drag").draggable({ revert: "valid" });
@@ -24,3 +23,28 @@ $(function () {
 $(function () {
 	$( "#stick" ).draggable({ containment: "#joystick", scroll: false });
 });
+
+fetch('data.json')
+.then(response => response.json())
+.then(data => {
+	console.log(data);
+	// document.getElementById("name").value = data.name;
+});
+
+function setScore(score) {
+	fetch('dataUpdate.php?score=' + score);
+}
+
+let gameScore = document.getElementById("score").value;
+
+function readData() {
+	fetch('data.json')
+		.then(response => response.json())
+		.then(data => {
+			//set the position and name of the car
+			gameScore = data.player.score;
+			//console.log(data.direction);
+			setTimeout(readData, 500);
+		});
+}
+readData();
