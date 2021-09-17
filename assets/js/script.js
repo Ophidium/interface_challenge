@@ -75,7 +75,7 @@ function readData() {
 			// console.log(data.player.score);
 			// console.log(data.player.speed);
 			console.log(data.player.direction);
-			setTimeout(readData, 500);
+			setTimeout(readData, 50);
 		});
 }
 readData();
