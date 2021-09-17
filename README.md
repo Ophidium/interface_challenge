@@ -17,3 +17,6 @@ de schietknop "shoot" werkt deels door de score in de json bestand te verhogen e
 drag en drop verlagen de brick aantal in de json file, het kan niet lager dan 0.
 
 er is geen reset knop
+
+
+(importan changes for the field are in the game.js file, the rest of the js files in field.html are (mostly) unedited)
